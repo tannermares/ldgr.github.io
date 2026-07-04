@@ -12,7 +12,7 @@ Marketing site for **Ldgr** — a private, manual budgeting app for iPhone. Stat
 | `support.html` | `/support.html` | Support + FAQ (App Store required) |
 | `styles.css` | — | Shared design system (tokens, components) |
 
-App Store URLs: **Support** → `https://ldgrapp.com/support.html`, **Privacy Policy** → `https://ldgrapp.com/privacy.html`.
+App Store listing: <https://apps.apple.com/app/id6476118269>. Support URL → `https://ldgrapp.com/support.html`, Privacy Policy URL → `https://ldgrapp.com/privacy.html`.
 
 ## Local preview
 
@@ -35,6 +35,6 @@ Pushing to `main` triggers GitHub Pages (branch deploy, root, `.nojekyll` to ser
 
 - The legal pages are plain-language drafts, not attorney-reviewed.
 - `support@ldgrapp.com` / `privacy@ldgrapp.com` need mailbox/forwarding set up on the domain.
-- The App Store badge is "coming soon" — swap in the real store link once the app is live.
+- The App Store badge links to the live listing (`id6476118269`); an `apple-itunes-app` meta shows the native smart banner in iOS Safari.
 
 © 2026 Tanner Mares
