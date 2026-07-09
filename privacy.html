@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Ldgr</title>
-<meta name="description" content="Ldgr collects no personal data. Everything you enter is stored in your own iCloud account. Read the full privacy policy.">
+<meta name="description" content="Ldgr collects no personal data. Everything you enter is stored in your own iCloud account, and shared-budget alerts are end-to-end encrypted. Read the full privacy policy.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/app-icon.png">
 <meta name="apple-itunes-app" content="app-id=6476118269">
@@ -11,7 +11,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Ldgr">
 <meta property="og:title" content="Privacy Policy — Ldgr">
-<meta property="og:description" content="Ldgr collects nothing about you. Your budgets and purchases live in your own iCloud account.">
+<meta property="og:description" content="Ldgr collects nothing about you. Your budgets and purchases live in your own iCloud account, and shared-budget alerts are end-to-end encrypted.">
 <meta property="og:url" content="https://ldgrapp.com/privacy.html">
 <meta property="og:image" content="https://ldgrapp.com/assets/og-image.png">
 <meta property="og:image:secure_url" content="https://ldgrapp.com/assets/og-image.png">
@@ -21,7 +21,7 @@
 <meta property="og:image:alt" content="The Ldgr app showing $1,240 left to spend across four budgets.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Privacy Policy — Ldgr">
-<meta name="twitter:description" content="Ldgr collects nothing about you. Your budgets and purchases live in your own iCloud account.">
+<meta name="twitter:description" content="Ldgr collects nothing about you. Your budgets and purchases live in your own iCloud account, and shared-budget alerts are end-to-end encrypted.">
 <meta name="twitter:image" content="https://ldgrapp.com/assets/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,20 +43,25 @@
   <div class="container">
     <a class="back" href="/">← Back to Ldgr</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated July 2, 2026</p>
+    <p class="updated">Last updated July 8, 2026</p>
 
     <div class="callout">
-      <p><strong>The short version:</strong> Ldgr collects nothing about you. The budgets and purchases you enter are stored in your own iCloud account. There is no Ldgr server, no analytics, no ads, and no tracking. The developer cannot see your financial data.</p>
+      <p><strong>The short version:</strong> Ldgr collects nothing about you. The budgets and purchases you enter are stored in your own iCloud account. There are no analytics, no ads, and no tracking. The only server Ldgr uses is a small relay that delivers shared-budget notifications, and it is end-to-end encrypted — the developer cannot see your financial data.</p>
     </div>
 
     <p class="lead">Ldgr is a manual budgeting app for iPhone. This policy explains what happens to the information you put into it — and, just as importantly, what doesn't.</p>
 
     <h2>What Ldgr stores, and where</h2>
     <p>Everything you create in Ldgr — your budgets, spending limits, and the purchases you add — is stored in your own <strong>private iCloud (CloudKit) database</strong>, tied to your Apple Account. If you aren't signed in to iCloud, your data simply stays on your device.</p>
-    <p>Ldgr has no server of its own. Your data is never sent to the developer, and the developer has no way to read, copy, or access it.</p>
+    <p>Your budgets and purchases are never sent to the developer, and the developer has no way to read, copy, or access them. The one small exception is the notification relay described below — and even it cannot read your data.</p>
 
     <h2>Sharing a budget</h2>
     <p>When you choose to share a budget, that budget and its purchases are stored in a shared iCloud area that the people you invite can access. Everyone you share with can see the purchases in that budget, and each purchase is attributed to the person who added it. Sharing is handled entirely through Apple's iCloud sharing — you control who is invited and can stop sharing at any time. Only share with people you trust.</p>
+
+    <h2>Notifications for shared budgets</h2>
+    <p>When someone adds a purchase to a budget you share, Ldgr sends you a notification. To make those notifications arrive promptly and reliably, Ldgr uses a small <strong>notification relay</strong> server. It is built so the developer cannot see anything meaningful about you or your money.</p>
+    <p>The relay receives only: your device's Apple push token (needed to deliver any notification at all), <strong>random, meaningless identifiers</strong> for your app installation and for each shared budget, and the notification's contents <strong>already encrypted</strong>. The name, amount, and category in each alert are encrypted on the device that created the purchase, using a key that exists only on the participants' devices and in your shared iCloud area — the relay never has that key and <strong>cannot decrypt the message</strong>.</p>
+    <p>What the relay cannot see: your name, any amount, any budget or category name, your Apple Account, or who is in a shared budget. It stores no message history — only what's needed to route the next notification. Muting a shared budget stops the relay from sending you its notifications entirely. If you never share a budget, the relay is never used.</p>
 
     <h2>Crash and error diagnostics</h2>
     <p>To find and fix bugs, Ldgr uses a third-party crash and error reporting service called <strong>Honeybadger</strong>. If the app crashes or hits an unexpected error, a technical diagnostic report may be sent to Honeybadger. That report contains information such as the app version, your device model, the iOS version, and details of the error itself.</p>
