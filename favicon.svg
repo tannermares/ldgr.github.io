@@ -1,17 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Ldgr">
   <rect width="32" height="32" rx="8" fill="#4F7942"/>
-  <!-- ledger page -->
-  <rect x="9" y="6" width="16" height="20" rx="3" fill="#F5F6F1"/>
-  <!-- binding rings on the spine -->
-  <g fill="#4F7942">
-    <circle cx="9" cy="10.5" r="1.6"/>
-    <circle cx="9" cy="16" r="1.6"/>
-    <circle cx="9" cy="21.5" r="1.6"/>
-  </g>
-  <!-- ruled lines -->
-  <g stroke="#4F7942" stroke-width="1.8" stroke-linecap="round">
-    <line x1="13" y1="10.5" x2="21.5" y2="10.5"/>
-    <line x1="13" y1="16" x2="21.5" y2="16"/>
-    <line x1="13" y1="21.5" x2="21.5" y2="21.5"/>
-  </g>
+  <!-- ledger page: notched spine, three ruled lines -->
+  <path fill="#F5F6F1" fill-rule="evenodd" d="M12 6 H22 A3 3 0 0 1 25 9 V23 A3 3 0 0 1 22 26 H12 A3 3 0 0 1 9 23 A1.5 1.5 0 0 0 9 20 V17.5 A1.5 1.5 0 0 0 9 14.5 V12 A1.5 1.5 0 0 0 9 9 A3 3 0 0 1 12 6 Z M21.5 9.6 H13 A0.9 0.9 0 0 0 13 11.4 H21.5 A0.9 0.9 0 0 0 21.5 9.6 Z M21.5 15.1 H13 A0.9 0.9 0 0 0 13 16.9 H21.5 A0.9 0.9 0 0 0 21.5 15.1 Z M21.5 20.6 H13 A0.9 0.9 0 0 0 13 22.4 H21.5 A0.9 0.9 0 0 0 21.5 20.6 Z"/>
 </svg>
