@@ -43,7 +43,7 @@
   <div class="container">
     <a class="back" href="/">← Back to Ldgr</a>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated July 15, 2026</p>
+    <p class="updated">Last updated July 19, 2026</p>
 
     <div class="callout">
       <p><strong>The short version:</strong> Ldgr collects nothing about you. The budgets and purchases you enter are stored in your own iCloud account. There are no analytics, no ads, and no tracking. The only server Ldgr uses is a small relay that delivers shared-budget notifications, and it is end-to-end encrypted — the developer cannot see your financial data.</p>
@@ -77,6 +77,21 @@
 
     <h2>Apple's role</h2>
     <p>Because Ldgr relies on iCloud to store and sync your data, Apple processes that data on your behalf as part of iCloud. Apple's handling of iCloud data is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+
+    <h2>Service providers</h2>
+    <p>Ldgr relies on a deliberately short list of providers, and only for the purposes given:</p>
+    <ul>
+      <li><strong>Apple (iCloud / CloudKit)</strong> — stores and syncs your budgets and purchases in your own Apple Account, and handles budget sharing. Governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
+      <li><strong>Apple Push Notification service</strong> — delivers notifications to your device.</li>
+      <li><strong>The Ldgr notification relay</strong> — routes shared-budget alerts. Receives only push tokens, random identifiers, and already-encrypted message contents, as described above.</li>
+      <li><strong>Sentry</strong> — receives crash and error diagnostics. Never receives your financial data.</li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>Data in transit is protected by TLS. Your budgets and purchases are protected by the security of your own Apple Account — so a strong Apple Account password and two-factor authentication are the most useful things you can do. Shared-budget notification contents are encrypted on-device with a key the relay never holds. No system is perfect; if a breach ever put your data at risk, affected users will be notified.</p>
+
+    <h2>Your rights</h2>
+    <p>Depending on where you live, you may have the right to access, correct, export or delete your personal information, and to object to certain processing. Because Ldgr holds none of your financial data, most of this is already in your hands through your Apple Account. For anything that isn't — a crash report, for instance — email <a href="mailto:privacy@ldgrapp.com">privacy@ldgrapp.com</a> and it will be actioned. Nobody is treated differently for exercising these rights.</p>
 
     <h2>Your control over your data</h2>
     <p>You can edit or delete any budget or purchase directly in the app at any time. Because your data lives in your iCloud account, you can also manage or remove it through your Apple Account and iCloud settings. Deleting the app removes it from your device; data in iCloud is managed through iCloud.</p>
